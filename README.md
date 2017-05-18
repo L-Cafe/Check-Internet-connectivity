@@ -1,2 +1,2 @@
 # Check-Internet-connectivity
-This small Python script checks Internet connectivity and reboots the router upon failure.
+This Python script checks Internet connectivity and reboots the router upon failure.
