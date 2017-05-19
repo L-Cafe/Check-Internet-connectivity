@@ -34,5 +34,5 @@ def checkInternet():
 if checkInternet():
     print("The specified host seems to be reachable from here.")
 else:
-    print("Host is unreachable. Internet connection might be down. Rebooting router.")
-    reboot_router()
+    print("Host is unreachable. Internet connection might be down. Rebooting router.") # TODO: Wait for 5 seconds and check again.
+    reboot_router()                                                                    # TODO: Check if the router is reachable. Otherwise, exit and do nothing.
