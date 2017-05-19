@@ -4,7 +4,7 @@ import socket
 
 def reboot_router():
     routerHost = os.environ["routerAddress"]
-    routerUser = os.environ["routerUser"]
+    routerUser = os.environ["routerUsername"]
     routerPassword = os.environ["routerPassword"]
 
     tn = telnetlib.Telnet(routerHost)
@@ -32,6 +32,7 @@ def checkInternet():
         return False
 
 if checkInternet():
-    pass
+    print("The specified host seems to be reachable from here.")
 else:
+    print("Host is unreachable. Internet connection might be down. Rebooting router.")
     reboot_router()
