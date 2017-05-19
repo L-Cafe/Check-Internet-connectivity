@@ -28,7 +28,7 @@ def checkInternet():
         socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((checkHost, checkPort))
         return True
     except Exception as ex:
-        print(ex.message)
+        print(ex)
         return False
 
 if checkInternet():
